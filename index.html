@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programación Web 2020</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/555f61b27f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ml-3" href="#">Cristian Archila</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link ml-1 mr-2" href="#bio">Sobre Mí</a>
+            <a class="nav-link ml-1" href="#hobbies">Hobbies</a>
+            <a class="nav-link ml-1" href="#bad">Cosas que me disgustan</a>
+            <a class="nav-link ml-1" href="#social">Contacto</a>
+          </div>
+        </div>
+      </nav>
+    <!--Slider-->
+        <div id="slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slider" data-slide-to="0" class="active"></li>
+              <li data-target="#slider" data-slide-to="1"></li>
+              <li data-target="#slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item crop active">
+                <img src="./images/slider.jpg" class="d-block w-100" loading="lazy" alt="FOTO1">
+                <div class="carousel-caption d-none d-xl-block">
+                  <a href="#bio"><h1>Biografía</h1></a>
+                </div>
+              </div>
+              <div class="carousel-item crop">
+                <img src="./images/slider3.jpg" class="d-block w-100" loading="lazy" alt="FOTO2">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="#hobbies"><h1>Cosas que he hecho durante la cuarentena</h1></a>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="./images/slider2.jpg" class="d-block w-100" loading="lazy" alt="FOTO3">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="#bad"><h1>Cosas que no me han gustado de la cuarentena</h1></a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+    
+    </div>
+    <!--Bio-->
+    <section id="bio">
+      <h2 class="text-center">¿Quién Soy?</h2>
+      <div class="container">
+        <p class="biotxt">
+          Mi nombre es Cristian Alexander Archila Chaclán. En este momento tengo 21 años, nací el 4 de noviembre de 1998 en la ciudad de Totonicapán, 
+          lugar del que hasta la fecha soy residente, actualmente estoy cursando el último ciclo de la carrera de ingeniería en informática y sistemas.  
+        </p>
+        <p class="biotxt">
+          Me apasionan varias cosas, entre ellas el basketball, la música, la poesía, la fotografía y el café.  
+        </p>
+      </div>
+    </section>
+
+    <!--Cosas que he hecho en cuarentena-->
+    <section id="hobbies">
+      <h2 class="text-center">Cosas que he hecho en cuarentena</h2>
+      <div class="container">
+          <div class="row">
+              <div class="six columns text-center">
+                  <h3>Libros que he leido/Empezado a leer</h3>
+                  <a class="btn btn-secondary btn-lg" data-toggle="collapse" href="#libros" aria-expanded="false" aria-controls="libros">Libros</a>
+                  <div class="collapse multi-collapse" id="libros">
+                    <ul>
+                      <li>Garras del paraíso - Charles Bukowski <br> <img src="./images/garras.gif" loading="lazy"></li>
+                      <li>Dune - Frank Herbert <br> <img src="./images/dune.jpg" loading="lazy"></li>
+                      <li>Blitz - David Trueba <br> <img src="./images/blitz.jpg" loading="lazy"></li>
+                      <li>Oyasumi Punpun - Inio Asano <br> <img src="./images/punpun.jpg" loading="lazy"></li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="six columns text-center">
+                  <h3 id="pets">Mascotas</h3>
+                  <a class="btn btn-secondary btn-lg" data-toggle="collapse" href="#mascotas" aria-expanded="false" aria-controls="mascotas">Mascotas</a>
+                  <div class="collapse multi-collapse" id="mascotas">
+                    <p>Durante la cuarentena dediqué bastante tiempo a cuidar y jugar con mis mascotas</p>
+                  <ul>
+                    <li>Coffee mi perro de 2 años <br> <img src="./images/coffee.jpg" loading="lazy"></li>
+                    <li>Tita mi gata de 14 años <br> <img src="./images/tita.jpg" loading="lazy"></li>
+                    <li>Don Gato mi gato de 5 años<br> <img src="./images/dgato.jpg" loading="lazy"></li>
+                  </ul>
+                  </div>
+              </div> 
+          </div>
+          <div class="text-center">
+            <h3>Fotografía</h3>
+            <p>Desde hace años la fotografía me apasiona y durante la cuarentena dediqué bastante tiempo en experimentar haciendome autoretratos</p>
+            <a class="btn btn-secondary btn-lg" data-toggle="collapse" href="#fotos" aria-expanded="false" aria-controls="fotos">Fotos</a>
+          </div>
+          <div class="row"> 
+            <div class="collapse multi-collapse" id="fotos">
+              <div class="six columns text-center">
+                <img src="./images/foto1.jpg" loading="lazy">
+                <img src="./images/foto2.jpg" loading="lazy">
+                <img src="./images/foto3.jpg" loading="lazy">
+              </div>
+              <div class="six columns text-center">
+                <img src="./images/foto4.jpg" loading="lazy">
+                <img src="./images/foto5.jpg" loading="lazy">
+                <img src="./images/foto6.jpg" loading="lazy">
+              </div>
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+          <h3>Poesía que he escrito</h3>
+          <a class="btn btn-secondary btn-lg" data-toggle="collapse" href="#poesia" aria-expanded="false" aria-controls="poesia">Poemas</a>
+        </div>
+        <div class="row">    
+          <div class="collapse multi-collapse" id="poesia">
+            <div class="twelve columns text-center">
+              <cite>
+                  <p>Final</p>
+                  Es terrible el deterioro, la decadencia, ser consciente de la caída en picada<br>
+                  Cuando al amor le salen canas, todos los caminos conducen al cementerio<br> 
+                  Los dardos que lanzamos al futuro parecen boomerangs clavándose en nuestra espalda<br> 
+                  La cama se vuelve pesada como si al tumbarnos en ella siguiéramos siendo nosotros los que soportan el peso de nuestros cuerpos, nuestros cuerpos y una atmosfera cada vez más densa<br> 
+                  <br>
+                  Ese ardor en el pecho no es reflujo, son los cadáveres de nuestras mariposas siendo cremados <br>
+                  Siéntate a mi lado en la última tarde de la primavera, cuando uno está triste le gusta ver puestas de sol<br> 
+                  Es hora de quitarle dos puntos y el “continuará” al capítulo de mi vida en tu biografía <br>
+                  El reloj se quedó sin manecillas hace dos horas o dos días, no sé, el tiempo ha estado detenido desde entonces, el tiempo y tu mirada <br>
+                  <br>
+                  El piso está atestado de botones de eyección he intentado no pisarlos, pero las alas se me están cayendo<br>
+                  Te susurro al oído “te amo” como medida de contingencia y lo oigo de vuelta en forma de eco, estás vacía, supongo que yo también. <br>
+                  Veo nuestras manos y ya no tengo la certeza de que las líneas en ellas no sean fisuras <br>
+                  El hilo rojo se perdió, ¡cómo vamos a coser las heridas de ahora en adelante! <br>
+                  <br>
+              </cite>
+              
+              <cite>
+                <p>Volar</p>
+                A riesgo del abismo suelo pararme en el borde<br>
+                el miedo siempre me hizo sentir vivo <br>
+                Pero, en el último centimetro antes de la gravedad <br>
+                mis pies se acobardan y me hacen correr en dirección opuesta <br>
+                <br>
+                En las noches cuando la oscuridad inunda mi cuarto <br>
+                suelo recordar las cosas que he hecho mal <br>
+                las veces que he huido <br>
+                es como si al caer sobre el colchon este sacara malos <br>
+                recuerdos en vez de polvo <br>
+                <br>
+                Mi cabeza es un constante dilema<br>
+                y hay veces que siento que mi unico enemigo soy yo <br>
+                entonces intento volverme una fortaleza y que nada <br>
+                me afecte, no tomarme enserio la vida para que pase <br>
+                <br>
+                Pero luego llegas tú y le das la vuelta a la moneda<br> 
+                mi cuarto inundado pasa a ser un mar donde las olas<br> 
+                me arrullan y el sonido de tu voz me calma<br> 
+                <br>
+                al tumbarme en la cama suena un suspiro, pero no del colchón<br> 
+                es mío. Y tengo la dicha de tenerte cada madrugada ahuyentando<br> 
+                todo como si a ti no te asustara nada (aunque sé que no es así)<br> 
+                <br>
+                Traes toda la luz que alguna vez te negaron y en vez de guardarla<br> 
+                egoistamente, me la regalas, se la regalas a todo el mundo<br> 
+                y estar contigo hace que el mundo lleno de calamidades parezca un lugar que encontró la paz<br> 
+                <br>
+                Entonces te pienso y resuena en todo la palabra amor, y eso es suficiente<br>
+                me decido y gracias a ti salto al precipicio...y ahí me doy cuenta que puedo volar<br> 
+              </cite>
+            </div>
+          </div>
+          
+        </div>
+        <br>
+      </div>
+    </section>
+
+    <!--Cosas que no me han gustado de la cuarentena-->
+    <section id="bad">
+      <h2 class="text-center">Cosas que no me han gustado de la Cuarentena</h2>
+      <div class="container">
+        <div class="row">
+          <div class="four columns text-center">
+            <h3>Encierro</h3>
+            <p>
+              Una de las cosas a la que más tiempo tardé en acostumbrarme fue el estar lejos de muchas personas que me importan. <br> 
+              <br>
+              Es díficl estar acostumbrado a ver a mis amigos seguido, a ir a ciertos lugares y hacer ciertas cosas que la situación <br>
+              no permite por el momento
+            </p>
+          </div>
+          <div class="four columns text-center">
+            <h3>Monotonía</h3>
+            <p>
+              Hay muchas cosas que uno puede hacer mientras está en casa, sin embargo es fácil acostumbrarse a hacer lo mismo. <br> 
+              <br>
+              Durante lo que lleva la pandemia tengo muchos días similares, hago lo mismo, duermo a la misma hora, me levanto a <br>
+              la misma hora, cocino lo mismo. 
+            </p>
+          </div>
+          <div class="four columns text-center">
+            <h3>Soledad</h3>
+            <p>
+              Aunque sigo en comunicación con muchas personas, el estar separados físicamente hace que uno se sienta solo <br> 
+              <br>
+              Una llamada no es lo mismo a escuchar la voz de otra persona, tener que comunicarnos de manera remota nos quita <br>
+              cierto componente humano en las relaciones sociales
+            </p>
+          </div>
+        </div>
+
+      </div>
+        
+    </section>
+    <!--Social-->  
+    <footer id="social">
+        <h2 class="text-center">Contacto</h2>
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="avatar"></div>
+                </div>
+                <div class="six columns">
+                    <div class="social text-center">
+                      <ul>
+                        <li><a href="https://www.facebook.com/cristianalexar16"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="https://twitter.com/Cristian_Alexar"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.instagram.com/cristian_archilac"><i class="fab fa-instagram"></i>Instagram</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+
+
+
+    <script src="./js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
